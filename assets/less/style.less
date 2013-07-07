@@ -1,0 +1,19 @@
+
+
+html > body {
+	background:@bodyBackground;
+	color: @textColor;
+	font-size:@baseFontSize
+}
+
+
+.readmore a.btn,.zenmore a,#paneltrigger a {
+	.buttonBackground(@btnColor, darken(@btnColor, 15%));
+	border-color: #c5c5c5;
+	border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
+	color: #fff;
+}
+
+.readmore a.btn:hover {
+	.buttonBackground(@btnColor, @btnColor);
+}

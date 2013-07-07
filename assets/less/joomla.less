@@ -1,0 +1,176 @@
+
+/* Joomla
+-----------------------------------------------------------------------------*/
+.pager a {background: none;border-radius: 0}
+.readmore a.btn span:after {padding-left: 10px}
+
+
+
+/* Content
+-----------------------------------------------------------------------------*/
+.article-info {font-size: 90%}
+.article-info,.parent-category-name,.category-name {color: #999}
+.article-info-term {display:none}
+
+
+.btn-group.pull-right {
+	float: right;margin-bottom: 10px;
+}
+
+
+/* Contact Form
+-----------------------------------------------------------------------------*/
+.contact dt {
+	margin: 20px 0 0 ;
+}
+
+.contact-category td {
+	padding: 20px;
+}
+
+.readmore a.btn span:after {padding-left: 10px}
+
+.article-info{color: @grayLight}
+
+.article-info-term {display:none;}
+
+
+
+
+/* Login Form
+-----------------------------------------------------------------------------*/
+.other-links,.items-more ol {margin: 0}
+.items-more {
+
+	ol.nav-tabs {
+		margin-left: 0px;
+	}
+}
+.other-links li {list-style-type:none;margin: 10px;.zenborder;padding-bottom: 8px;} 
+
+
+
+/* Search Results
+-----------------------------------------------------------------------------*/
+.result-created,.result-category {
+	font-size: 80%;color: @grayLight;font-style: italic;padding: 10px 0;
+}
+
+.result-created {
+	.zenborder;overflow: hidden;margin-bottom: 10px;
+}
+
+.result-title {
+	font-size: 1.6em;
+}
+
+
+/* Pagenav
+-----------------------------------------------------------------------------*/
+.pager li > a {
+	border-radius: 0;border: 0;background: none;
+}
+
+.pager a {background: none;border-radius: 0}
+
+
+/* Pagenav - Tabs
+-----------------------------------------------------------------------------*/
+dl#tabs,dl.tabs {
+	
+	.clearfix;
+	background-position:left top;
+
+	h3 {
+		.zenborder;
+		float: left;
+		margin-right: 1%;
+		font-size: 1.2em;
+		font-weight: normal;
+		padding:4px 9px
+	}
+
+
+	.open a {
+	color:@secondary
+	}
+
+
+
+}
+
+/* Pagenav - Sliders
+-----------------------------------------------------------------------------*/
+#sliders,.pane-sliders
+	{
+	h3.pane-toggler,h3.pane-toggler-down {.zenborder;margin:0 0 10px;padding:10px}
+	h3.pane-toggler:before {content: "+ "}
+	h3.pane-toggler-down:before {content: "- "}
+}
+
+.content.pane-down {padding-bottom:30px !important}
+
+.accordion-toggle {
+	.dividerstyle;
+	display:block;
+	padding:20px 0;
+	
+	&:hover {
+		.dividerstyle;
+	}
+	
+}
+
+
+/* Pagenav - Article Index
+-----------------------------------------------------------------------------*/
+.article-index 
+	{
+		ul {padding:10px;margin:0 0 30px}
+		li {.zenborder;list-style-type:none;padding:4px}
+		li:last-child {background:none}
+}
+
+.pagenavcounter {
+	float:right;
+	width:100%;
+	text-align:right;
+	font-style:italic;
+	color:@grayLight;
+	margin-bottom:20px
+}
+
+.nav-tabs li.active a,
+.nav-tabs li a.active,
+{background:@secondary;color:@white}
+.nav-tabs li:hover a{color:@secondary !important;border-color:@white}
+
+
+// Tooltips
+// ---------------------------------------------------------
+.tip-wrap {
+  background: @primary;
+  border: 1px solid darken(@primary, 4%);
+  .border-radius (5px);
+  .box-shadow (0 0 3px rgba(0,0,0,.4));
+  max-width: 300px;
+  z-index: 999;
+  color:#fff;
+}
+
+.tip-title {
+  border-bottom:  1px solid darken(@primary, 4%);
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.tip-text {
+  font-size: @baseFontSize;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.hasTip img {
+  border: none;
+  margin: 0 5px 0 0;
+}

@@ -1,4 +1,4 @@
 BambooFramework
 ===============
 
-A zen like framework built on Roots, Options Framework and Page Builder.
+A zen like wordpress framework built on Roots, Options Framework and Page Builder.

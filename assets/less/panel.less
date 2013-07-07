@@ -1,0 +1,38 @@
+/* Hidden Panel - Core often overriden in template overrides
+-----------------------------------------------------------------------------*/
+#paneltrigger {
+	position: fixed;
+	top: 6px;
+	left:auto;
+	right: 0px;
+	z-index: 1000;
+	
+	a {
+		border-bottom: 4px solid darken(@btnColor, 20%);
+		padding: 8px;
+		
+		&:hover {
+			border-bottom-color: darken(@primary, 20%);
+			background:@primary;
+		}
+	}
+}
+
+#panel {
+
+	padding: 20px;
+	.simplelist();
+	display: none;
+	z-index:10000;
+	
+	.modal-header {
+		margin-top: -20px;
+		padding-bottom: 30px;
+	}
+	
+	.input-append .add-on, .input-prepend .add-on
+	{
+		background-color: #fff;
+	}
+	
+}

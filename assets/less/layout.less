@@ -1,0 +1,194 @@
+
+/* Main Container
+-----------------------------------------------------------------------------*/
+.container {max-width: @basewidth;margin:0 auto}
+#fullwrap {float: left;width: 100%}
+
+/* Various Resets & Padding
+-----------------------------------------------------------------------------*/
+div{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+  }
+  
+.span12 {margin: 0 !important}
+
+
+/* A common padding image for some elements
+-----------------------------------------------------------------------------*/
+#mainWrap .zen-container,
+#headerwrap .zen-container,
+#bannerwrap .zen-container,
+#grid1wrap .zen-container,
+#grid2wrap .zen-container,
+#grid3wrap .zen-container,
+#grid4wrap .zen-container,
+#grid5wrap .zen-container,
+#grid6wrap .zen-container,
+#bottomrow .zen-container,
+#footerwrap .zen-container {
+	.padding-row 
+}
+
+
+
+
+/* Bannerwrap
+-----------------------------------------------------------------------------*/
+#bannerwrap .zen-container {padding-bottom: 0}
+
+
+/* Topwrap
+-----------------------------------------------------------------------------*/
+#topwrap {
+	font-size: 90%;
+	padding-top: 8px;
+	
+	ul li a{
+		float: left;
+		margin: 0 10px 0 0 ;
+	}
+}
+
+#top4 {
+	ul {float: right}
+	ul li {float: left}
+}
+
+.hidden {display: none !important}
+
+
+/* Logo
+-----------------------------------------------------------------------------*/
+body #logowrap {
+	.padding-row-bottom;
+
+
+	h2,
+	h2 a {
+		margin: 0;
+		color:@logoColor !important;
+		font-size: @logoSize;
+	}
+
+
+	#tagline {
+		font-size: 90%;
+
+		span {
+			font-size: 90%;color: @taglineColor;font-style: italic;font-weight: normal;
+		}
+	}
+}
+
+
+/* Breadcrumb
+-----------------------------------------------------------------------------*/
+#breadcrumb {
+	.zenborder;
+	background: none;
+	border-radius:0;
+	.margin;
+	margin-top:10px;
+	overflow: hidden;
+	padding: 0px 10px;
+	font-size:90%;
+
+		ul,
+		.divider 
+		{
+			background: none;
+			margin: 0;
+			border:0;
+		}
+	
+		.divider {
+			margin-right: 4px;
+			display:inline-table
+		}
+	
+		li {
+			float:left;border:0 !important
+		}
+	
+		a {
+			float:left
+		}
+}
+
+/* Main Column
+-----------------------------------------------------------------------------*/
+#midCol,
+#midCol.zen-content{
+	.margin;
+	.zenborder;
+	margin: 0 0 30px !important;
+	.padding;
+	
+	.nav-tabs a{
+		.border-radius(4px 4px 0 0);
+		&hover {color:#fff}
+	}
+}
+
+
+#mainWrap.rightmain {
+	.sidebar-1 {padding:0}
+	.sidebar-1 {background:none}
+	.sidebar-2 {background-position:right top;margin:0;padding-left:0;padding-right:40px}
+}
+
+
+/* Above and below
+-----------------------------------------------------------------------------*/
+#above {margin-bottom: 30px;.zenborder;padding:10px 20px;}
+#below {margin-top: 0px;.zenborder;padding:10px 20px;}
+
+
+
+/* Sidebar
+-----------------------------------------------------------------------------*/
+.sidebar {
+
+	&.pull-left {
+		padding:0 !important
+	}
+	
+	.moduletable {
+		.zenborder;
+		padding: 10px;
+		margin-bottom: 30px;
+		float: left;
+		width: 100%;
+	
+	
+		ul li {
+		border-bottom: 1px solid @borderColor;
+		}
+	}
+}
+
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footerwrap {
+	font-size: 90%;
+	padding-bottom: 80px;
+	
+	 ul li {
+		.flatlist;
+	}
+
+	 a:hover {background: none}
+}
+
+
+
+
+/* Copyright
+-----------------------------------------------------------------------------*/
+#zen-copyright {padding: 20px 0;float: right}

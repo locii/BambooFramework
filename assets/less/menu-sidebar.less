@@ -1,0 +1,92 @@
+/* Sidebar
+-----------------------------------------------------------------------------*/
+.sidebar {
+
+	ul.nav {
+	
+	/* First level items */
+	li {
+		.reset;
+		float: none;
+		border-bottom: 1px solid #eee;
+		margin: 0;
+		padding: 4px;
+		
+		&:last-child {border-bottom: 0}
+	}
+
+	
+	/* The marker for drop down items */
+	li .dropdown-menu a:after{
+	 	display:none;
+	}
+	
+	> li.active {margin-left:0;padding-left:16px !important
+	}
+	
+	/* Active first level */
+	> li.active > a,
+	li li.active > a  {
+		background: none !important;
+		color: @linkColorActive !important;
+		.noshadow;
+		padding: 0 !important}
+	
+	li a:hover {
+		color: @linkColorHover;
+		background:none;
+		.noshadow
+	}
+	
+	/* Second level items */
+	ul {
+		display: block;
+		width:100%;
+		position: relative;
+		.reset;
+		z-index: 1;
+		left: 10px;
+		top: 4px;
+		margin-bottom: 10px !important;
+	}
+	
+	/* Because we dont like vertical drop downs */
+	li:hover ul {margin-top: 0}
+	
+	ul {margin-top:10px !important}
+	
+	ul ul {margin-top:0 !important}
+	
+	/* Small second level padding adjustment */
+	li li {padding: 0 !important;border:0 !important;margin:0 !important;}
+	
+	
+	/* Second level colour and reset */
+	li li a,
+	li li a:hover{
+		padding: 0 0 0 0;
+		color: #999;
+		font-size: 90%
+	}
+	
+	/* Second level hover states */
+	li li a:hover {
+		color: @linkColorHover;
+		background: none
+	}
+	
+	/* Adjustment for second level active items */
+	li.active li.active a {
+		padding: 0 0 0 12px
+	}
+	
+	/* Third Level */
+	li li li {
+		padding-left: 10px;
+		font-size: 90%;
+	}
+	
+	.firstchild;
+	.lastchild;
+	}
+}

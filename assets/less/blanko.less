@@ -1,0 +1,393 @@
+/* Styles that need to be reset before we proceed
+-----------------------------------------------------------------------------*/
+html > body {
+margin: 0;
+color: @textColor;
+background: @bodyBackground 
+}
+
+
+
+/* Top Area
+-----------------------------------------------------------------------------*/
+#topcolour {
+	background: @topColour;
+	border-bottom: 1px solid lighten(@topColour, 15%);
+	color: @topTextColour;
+	float: left;
+	width: 100%;
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @topTextColour;
+	}
+	
+	.logo {
+		padding:30px 0 0 0;
+			a {
+			color: @logoColor;
+			font-size: @logoSize;
+			
+		}
+	}
+	
+	#tagline span {
+		color:@taglineColor
+	}
+	
+	#topwrap {
+		
+		.zen-container {padding:10px 0;margin-bottom:20px}
+		li {border:0}
+	}
+	
+	#navwrap {
+	
+		margin-bottom: 0;
+		
+		.zen-container {padding:0}
+		
+		 ul.nav {
+		 	
+		 		font-size: 90%;
+
+		 
+			 	li {margin: 20px 10px;
+			 	
+			 	&:hover a{background:none}
+				
+				> a{
+					text-transform: none;
+					text-align: left;
+					font-weight: normal;
+					
+					&:hover {background:none;color: @navbarLinkColorHover;}	
+				}
+			
+				
+				&.active > a {
+				.box-shadow(none);
+					border-bottom: 4px solid @navbarLinkColorActive;
+					color: @navbarLinkColorActive;
+					background: none;
+					text-align: left;
+					.border-radius(0)
+				}
+				
+				em {
+					font-size: 90%;
+				}
+		
+				
+				ul {
+					
+					.lastchild();
+				
+					li {
+						margin: 0 !important;
+						line-height: 1;
+						border-bottom: 1px solid lighten(@dropdownBackground, 4%);
+						
+						a {color: @dropdownLinkColor;
+							&:hover{
+								color: @dropdownLinkColorHover
+							}
+						}
+						
+						&.active > a {
+							border-bottom: 0;
+							color:@dropdownLinkColorActive;
+							
+							&:hover {color: @dropdownLinkColorHover}	
+						}
+					}
+				}
+				
+			}
+			
+			li.dropdown.open > .dropdown-toggle,
+			li.dropdown.active > .dropdown-toggle,
+			li.dropdown.open.active > .dropdown-toggle,
+			> li.dropdown.open.active > a:hover  {
+				background: none !important;
+				color: @navbarLinkColorActive !important;
+			}
+		}
+	}
+}
+
+
+#tabwrap {
+	border-top: 1px solid #fff;
+	.padding-row;
+	.dividerstyle;
+	color: @tabTextColour;
+	border-bottom: 1px solid @borderColor;
+	background-color: @tabColour;
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @tabTextColour;
+	}
+	
+	ul {
+		border:0;
+		.dividerstyle;
+		border-bottom: 1px solid @borderColor;
+		padding-bottom:20px;
+		
+		li {
+		
+			&.active a{
+				border-bottom:4px solid darken(@primary, 10%);
+				margin:0;
+				
+				&:hover{
+					color:@white;
+					margin:0
+				}
+			}
+			
+			a {.border-radius(0);
+				&:hover{
+					border:0;
+					border-color: #f9f9f9;
+					border-bottom:4px solid darken(@secondary, 10%);
+					color:@white;
+					margin:0 2px
+				}
+			}
+			
+		}
+	}
+}
+
+
+
+/* Breadcrumb
+-----------------------------------------------------------------------------*/
+#breadcrumb {
+	.reset;
+	.dividerstyle();
+	border-bottom: 1px solid @borderColor;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	
+	ul li {border: 0}
+}
+
+
+
+/* Colour of main area
+-----------------------------------------------------------------------------*/
+#gradient {
+	border-top: 1px solid #fff;
+	float: left;
+	width: 100%;
+	color:@textColor;
+	background: @bodyBackground;
+}
+
+
+
+
+/* Main grid rows
+-----------------------------------------------------------------------------*/
+#topwrap .zen-container,
+#bannerwrap > .zen-container,
+#grid1wrap .zen-container,
+#grid2wrap .zen-container,
+#grid3wrap .zen-container,
+#grid4wrap .zen-container,
+#grid5wrap .zen-container,
+#grid6wrap .zen-container,
+#mainWrap .zen-container {
+	.dividerstyle();
+	.padding-row;
+	.simplelist;
+}
+
+
+
+
+/* Colour behind banner
+-----------------------------------------------------------------------------*/
+#bannerwrap {
+	padding: 0 0 20px 0;
+	float: left;
+	width: 100%;
+	background: @bannerColour;
+	color: @bannerTextColour;
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @bannerTextColour;
+	}
+	
+	.zen-container ul li {border:0;padding:0}
+}
+
+
+
+/* Main Content
+-----------------------------------------------------------------------------*/
+#mainWrap {
+	padding: 0;
+	
+	#midCol,#midCol.zen-content {
+		.reset;
+	}
+	
+	.sidebar {
+		background: url(../images/dividerVert.png) repeat-y left top;
+		padding-left: 30px;
+	}
+	
+	#midCol {
+		ul.nav 
+		{
+		
+		.dividerstyle;
+		padding-bottom:20px;
+		border-bottom:1px solid @borderColor;
+		
+		li {
+			.border-radius(0);	
+			border:0;
+			
+			&:hover a {
+				color:@white
+			}
+			
+			a {.border-radius(0) !important;
+				&hover {color:@white !important}
+			}
+		}
+	}
+			
+	}
+}
+
+
+#above, #below {border:0;padding:0;margin:20px 0}
+
+
+/* Bottom row
+-----------------------------------------------------------------------------*/
+#bottomrow {
+	background: @bottomColour;
+	color: @bottomTextColour;	
+	float: left;
+	width: 100%;
+	.padding-row;
+	
+	ul li {
+		.simplelist;
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @bottomTextColour;
+	}
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footerwrap {
+	background: @footerColour;
+	border-top: 1px solid lighten(@footerColour, 10%);
+	color: @footerTextColour;
+	float: left;
+	width: 100%;
+	.padding-row;
+	
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @footerTextColour;
+	}
+}
+
+
+/* Zentools
+-----------------------------------------------------------------------------*/
+
+.zentools {
+	
+	.zenmore a{
+		padding: 6px 8px;
+		.border-radius(4px);
+		border-bottom: 2px solid @btnColor;
+		
+		&:hover {
+			background: lighten(@btnColor, 4%)
+		}
+	}
+	
+	&.grid ul li {
+		border: 0 !important;
+	}
+}
+
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+h1.article-title,
+h2.article-title {
+	.reset;
+	.dividerstyle();
+	border-bottom: 1px solid @borderColor;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.divider {
+	.dividerstyle;
+	border-bottom: 1px solid @borderColor;
+	margin: 30px 0;
+}
+
+.readmore a.btn,.zenmore a {
+	padding: 6px 8px;
+	.border-radius(4px);
+	background: @btnColor;
+	border: 0;
+	border-bottom: 2px solid darken(@btnColor,20%);
+	
+	&:hover {
+		background: darken(@btnColor, 10%) !important
+	}
+	
+	span:after {padding-left: 0px;content: "";
+	}
+
+}
+
+.readmore a.btn:hover {
+	.buttonBackground(@btnColor, @btnColor);
+}
+
+
+/* Module Classes
+-----------------------------------------------------------------------------*/
+.primary1,
+.sidebar .primary1,
+.inset.primary1 .zen-module-body,
+.primary2,
+.sidebar .primary2,
+.inset.primary2 .zen-module-body,
+.primary3,
+.sidebar .primary3,
+.inset.primary3 .zen-module-body,
+.secondary1,
+.sidebar .secondary1,
+.inset.secondary1 .zen-module-body,
+.secondary2,
+.sidebar .secondary2,
+.inset.secondary2 .zen-module-body,
+.secondary3,
+.sidebar .secondary3,
+.inset.secondary3 .zen-module-body {
+	border-width: 0 0 4px 0;
+	
+}
+
+

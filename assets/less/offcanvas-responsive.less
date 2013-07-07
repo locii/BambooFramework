@@ -1,0 +1,83 @@
+@media (max-width: @navbarCollapseWidth){ 
+
+	#off-canvas-nav {
+	
+		#nav {
+			background: #333333 !important;
+			
+			
+			
+			[class^="icon-"] {
+				background:none
+			}
+			
+			.mega-inner {padding:0 !important}
+			
+			.moduletable {
+				padding:10px;
+				color:#fff;
+				
+				h1, h2, h3, h4, h5, h6, blockquote {
+					color:#fff
+				}
+			} 
+			
+
+			ul {
+			
+				> li {
+							
+					a {
+						border-bottom:1px solid #474747;
+						.border-radius(0);
+						padding:11px 20px;
+						background:#444;
+						color:#eee;
+						
+						&:hover {
+							color:@linkColorHover
+						}
+						
+						&:after {
+							display:none
+						}
+						
+					}
+					
+					> &.active a {background:#fff}
+						
+					 li {
+					 
+						a {
+							background:#333;
+							padding:8px 30px;
+							border-bottom:0;
+							
+							&:hover {
+								background:none
+							}
+						}
+						
+						 &.active > a {
+						 	background:none !important;
+						 	color:@primary
+						 }
+					
+				
+					 	li {
+							a {
+								border:0;
+								padding:4px 50px
+							}
+							
+							li {
+							
+								a {padding-left:60px}
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
